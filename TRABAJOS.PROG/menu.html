@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/
+        bootstrap-theme.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+        <link href="https://fonts.cdnfonts.com/css/gunplay" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        img{
+            width: 200px;
+            height: auto;
+        }
+        table, th, td{
+            border: 1px dotted rgb(1, 17, 19);
+            align-items: center;
+
+        }
+        table{
+            width: 80%;
+            margin-top: 20px;
+            border-collapse: collapse;
+            box-shadow: 0 5px 15px black;
+            margin-left: 50px;
+        }
+        th, th{
+            text-align: left;
+            padding: 8px;
+
+        }
+        tr:nth-child(even){
+            background-color: aqua;
+        }
+        tr:hover{
+            background-color: rgb(255, 251, 0);
+        }
+
+
+    </style>
+     <div style="margin: 24px;">
+        <nav class="navbar navbar-light" style="background-color:bisque;">
+            <div class="container">
+                <a class="navbar-brand" href="index.html" style="color:blue;                                                                    font-family: 'Gunplay', sans-serif;
+                font-family: 'Gunplay 3D', sans-serif;">Inicio</a>
+                <div class="collapse navbar-collapse" id="navbarNavDropDown">
+                    <ul class="nav navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" 
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Unidad 1</a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDripdownMenuLink">
+                                <a class="dropdown-item" href="Perfil.html">Perfil</a><br>
+                                <a class="dropdown-item" href="Calculadora.html">Calculadora</a><br>
+                                <a class="dropdown-item" href="Tienda.html">Tienda parte 1</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" 
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Unidad 2</a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDripdownMenuLink">
+                                <a class="dropdown-item" href="Tiendapedido.html">Tienda Pedido</a><br>
+                                <a class="dropdown-item" href="json.html">Json</a><br>
+                                <a class="dropdown-item" href="Tiendapedido2.html">Tienda parte 2</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" 
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Unidad 3</a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDripdownMenuLink">
+                                <a class="dropdown-item" href="basededatos.html">Base de Datos</a><br>
+                                <a class="dropdown-item" href="peliculas.html">Peliculas</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <h1>Desayunos</h1>
+     <table>
+        <tr>
+            <th>Imagen</th>
+            <th>Descripcion</th>
+            <th>Precio</th>
+        </tr>
+        <tr>
+            <td><img src="img/01.jpg" alt="Desayuno"></td>
+            <td><p>Un panqueque con fruta: Contiene fresa, moras y platano.
+                Esta comida rica en carbohidratos puede proporcionar suficiente energía para impulsar la actividad física de un día. </p></td>
+            <td>$60.00</td>
+        </tr>
+        <tr>
+            <td><img src="img/02.jpg" alt="Desayuno"></td>
+            <td><p>Huevo revuelto, con pan tostado (con mantequilla), y tocino. 
+                Este platillo agrega proteinas y carbohidratos, un desayuno mejor preparado. 
+                El huevo es un alimento de gran valor proteico; tiene grandes cantidades de vitaminas A, B6, B12, D y E. 
+                Además es rico en ácido fólico.</p></td>
+            <td>$70.00</td>
+        </tr>
+        <tr>
+            <td><img src="img/03.jpg" alt="Desayuno"></td>
+            <td><p>Yogurt con granola, frutos secos y fruta fresca como la fresa. 
+                Contiene proteínas muy útiles para el ser humano y con una mayor digestibilidad que la leche. 
+                Además, es una buena fuente de vitaminas del grupo B y A y una excelente fuente de minerales como el calcio, fósforo, magnesio y zinc.</p></td>
+            <td>$60.00</td>
+        </tr>
+        <tr>
+            <td><img src="img/04.jpg" alt="Desayuno"></td>
+            <td><p>Pan tostado con queso tipo panela y aguacate con especias. 
+                Entre sus beneficios encuentras: Reduce los niveles de colesterol malo en sangre y aumenta el colesterol bueno. 
+                El queso panela es la opción más recomendada por los nutriólogos para personas con hipertensión o diabetes debido a su bajo aporte en grasa.</p></td>
+            <td>$50.00</td>
+        </tr>
+        <tr>
+            <td><img src="img/05.jpg" alt="Desayuno"></td>
+            <td><p>Cereal con leche. 
+                Contiene proteína que contribuye al mantenimiento de la masa muscular, ¡lo cual es bueno para combatir el desgaste diario! 
+                Calcio que mantiene tus dientes y huesos sanos, y es esencial para el crecimiento y desarrollo normal de los huesos de los niños. Con frutos secos como pasas.</p></td>
+            <td>$50.00</td>
+        </tr>
+        <tr>
+            <td><img src="img/06.jpg" alt="Desayuno"></td>
+            <td><p>Huevo con tocino, acompañado de frijoles y salchicha, con panes tostados. 
+                Los frijoles son ricos en proteína vegetal, fibra, vitaminas del grupo B, hierro, ácido fólico, calcio, potasio, fósforo y zinc. 
+                La mayoría de los frijoles también tienen pocas grasas. 
+                El tocino salado presenta cantidades considerables de sodio que limitará su consumo en personas hipertensas.</p></td>
+            <td>$80.00</td>
+        </tr>
+     </table>
+     <h1>Almuerzos</h1>
+      <table>
+        <tr>
+            <td><img src="img/07.jpg" alt="Almuerzo"></td>
+            <td><p>Pechuga con ensalada, tomate, aguacate, lechuga, etc. La carne de pollo es fuente importante de nutrientes como proteínas, lípidos, Vitamina 3 y minerales como calcio, hierro, zinc, sodio, potasio y magnesio, entre otros. De fácil digestión. 
+                Las verduras de hoja verde son una buena opción para una dieta saludable porque no contienen colesterol y son naturalmente bajas en calorías y sodio.</p></td>
+            <td>$120.00</td>
+        </tr>
+        <tr>
+            <td><img src="img/08.jpg" alt="Almuerzo"></td>
+            <td><p>Pechuga en salsa y arroz blanco.  La carne de pollo es fuente importante de nutrientes como proteínas, lípidos, Vitamina 3 y minerales como calcio, hierro, zinc, sodio, potasio y magnesio, entre otros. 
+                De fácil digestión. 
+                Además de la fibra, aporta hidratos de carbono, agua, proteínas, sodio, potasio, fósforo, aceites vegetales, calcio, hierro, provitamina A, etc.</p></td>
+            <td>$100.00</td>
+        </tr>
+        <tr>
+            <td><img src="img/09.jpg" alt="Almuerzo"></td>
+            <td><p>Albóndigas y arroz blanco.
+                Contiene proteínas de calidad y grasa monoinsaturada y saturada. 
+                Es rica en hierro, zinc y sodio. 
+                Aporta hidratos de carbono, agua, proteínas, sodio, potasio, fósforo, aceites vegetales, calcio, hierro, provitamina A, etc.</p></td>
+            <td>$60.00</td>
+        </tr>
+        <tr>
+            <td><img src="img/10.jpg" alt="Almuerzo"></td>
+            <td><p>Pasta en salsa de tomate y queso. 
+                Además de ser un alimento rico en hidratos de carbono, la pasta, por sí sola, apenas contiene grasa y es rica en vitaminas del grupo B. 
+                También es rica en fibra, sobre todo la pasta integral, por lo que contribuye a la salud intestinal y ayuda a controlar el peso.</p></td>
+            <td>$60.00</td>
+        </tr>
+        <tr>
+            <td><img src="img/11.jpg" alt="Almuerzo"></td>
+            <td><p>La lasaña (en italiano, lasagna) es un tipo de pasta. 
+                Se suele servir en láminas superpuestas intercaladas con capas de ingredientes al gusto, más frecuentemente carne (ragú) en salsa boloñesa y bechamel. 
+                Su origen es italiano y el plato preparado usualmente con carne suele llamarse lasaña al horno.</p></td>
+            <td>$60.00</td>
+        </tr>
+        <tr>
+            <td><img src="img/12.jpeg" alt="Almuerzo"></td>
+            <td><p>Gorditas de maiz, de carne. De pollo con verdura y aguacate. Y de frijol con queso.
+                Aunque es posible que el origen de este platillo se remonte al estado de Veracruz, debido a la amplia diversidad de gorditas que existen en todo el país, su procedencia exacta no está clara.</p></td>
+            <td>$90.00</td>
+        </tr>
+    </table>
+    <h1>Cenas</h1>
+    <table>
+        <tr>
+            <td><img src="img/13.jpg" alt="Cena"></td>
+            <td><p>Boneless, acompañado de apio y un aderezo.
+                Si prefieres la comodidad y la textura más uniforme, los boneless pueden ser la mejor opción para ti. 
+                La verdura aporta sus nutrientes y la carne sus proteinas.</p></td>
+            <td>$60.00</td>
+        </tr>
+        <tr>
+            <td><img src="img/14.jpg" alt="Cena"></td>
+            <td><p>Sushi. El sushi tiene un aporte equilibrado de proteínas, hidratos de carbono, fibra, vitaminas y minerales, libres de grasas animales y ricos en omega-3. </p></td>
+            <td>$60.00</td>
+        </tr>
+        <tr>
+            <td><img src="img/15.jpg" alt="Cena"></td>
+            <td><p>Quesadillas, con carne.
+                El queso, uno de los ingredientes más populares de las quesadillas, es fuente de calcio, que ayuda a fortalecer huesos y dientes. 
+                Contiene ácido fólico, es alto en proteínas y contienen aminoácidos esenciales para el buen funcionamiento de nuestro cuerpo y nuestros músculos.</p></td>
+            <td>$60.00</td>
+        </tr>
+        <tr>
+            <td><img src="img/16.jpg" alt="Cena"></td>
+            <td><p>Hamburguesa preparada, acompañada de papas.
+                La carne para hamburguesas es un alimento muy completo con alto contenido de proteínas, vitaminas del complejo B y minerales como el hierro, zinc y selenio, todos ellos necesarios para el buen desarrollo y mantenimiento de nuestro organismo.</p></td>
+            <td>$60.00</td>
+        </tr>
+        <tr>
+            <td><img src="img/17.jpg" alt="Cena"></td>
+            <td><p>Hot dog, con papas fritas.
+                Son productos cárnicos elaborados con carne picada de pollo, ternera o cerdo junto con sal, especias y otros condimentos.</p></td>
+            <td>$40.00</td>
+        </tr>
+        <tr>
+            <td><img src="img/18.jpg" alt="Cena"></td>
+            <td><p>Empanadas, con crema, verdura y queso.
+                Las empanadas son una rica fuente de proteínas. 
+                Son una combinación perfecta de carbohidratos y proteínas, lo que los hace ideales para ganar músculo y reparar tejidos. Las empanadas también son una rica fuente de vitaminas.</p></td>
+            <td>$60.00</td>
+        </tr>
+    </table>
+    <h1>Postres</h1>
+    <table>
+        <tr>
+            <td><img src="img/19.jpg" alt="Postres"></td>
+            <td><p>Fresas con cremas decoradas con chocolate(blanco o negro), chispas de colores y chispas de chocolate, ideal para un sabor delicioso.</p></td>
+            <td>$50.00</td>
+        </tr>
+        <tr>
+            <td><img src="img/20.jpg" alt="Postres"></td>
+            <td><p>Flan napolitano, con moras. Delicioso sabor a flan para pasar el momento, con moras dulces e increibles.</p></td>
+            <td>$50.00</td>
+        </tr>
+        <tr>
+            <td><img src="img/21.jpg" alt="Postres"></td>
+            <td><p>Flan de queso, con jarabe de fresa y fresas entreras.
+                Convinando ambos sabores, queso y fresa para hacer esta linda combinacion.</p></td>
+            <td>$50.00</td>
+        </tr>
+        <tr>
+            <td><img src="img/22.jpg" alt="Postres"></td>
+            <td><p>Pay de limon. El delicioso sabor del pay, pero ahora con ese toque de sabor a limon. </p></td>
+            <td>$40.00</td>
+        </tr>
+        <tr>
+            <td><img src="img/23.jpg" alt="Postres"></td>
+            <td><p>Pay de oreo, de lo comun a lo extradulce, con chocolate en el pay y decorado con galletas oreo para una mejor experiencia de sabor.</p></td>
+            <td>$40.00</td>
+        </tr>
+        <tr>
+            <td><img src="img/24.jpg" alt="Postres"></td>
+            <td>Gelatina. 
+                Con sabores a eleccion de frutas, manzana verde, mora y fresa. Todas dostintas pero el mismo sabor increible. 
+                Incluye trozoz de la fruta elegida.<p></p></td>
+            <td>$50.00</td>
+        </tr>
+    </table>
+    <h1>Bebidas</h1>
+    <table>
+        <tr>
+            <td><img src="img/25.jpg" alt="Bebidas"></td>
+            <td><p>Café. 
+                Se denomina café a la bebida preparada por infusión a partir de las semillas del fruto de los cafetos debidamente procesadas y tostadas. 
+                Se caracteriza por un agradable aroma y sabor y es consumido ampliamente a nivel mundial.
+            </p></td>
+            <td>$30.00</td>
+        </tr>
+        <tr>
+            <td><img src="img/26.jpg" alt="Bebidas"></td>
+            <td><p>Té. 
+                El té es la infusión preparada con las hojas secas molidas o brotes del arbusto Camellia sinensis en agua caliente. </p></td>
+            <td>$30.00</td>
+        </tr>
+        <tr>
+            <td><img src="img/27.jpg" alt="Bebidas"></td>
+            <td><p>Agua de limon. 
+                Hidrata: como apuntábamos, es su principal beneficio, debido al agua. 
+                Contiene micronutrientes: es buena fuente de potasio y vitamina C. 
+                Contiene igualmente vitaminas del grupo B, vitamina E, magnesio, calcio y fósforo.</p></td>
+            <td>$30.00</td>
+        </tr>
+        <tr>
+            <td><img src="img/28.jpg" alt="Bebidas"></td>
+            <td><p>Agua de horchata. 
+                Los únicos ingredientes que debe llevar son chufas, agua y azúcar, aunque este último es preferible que se encuentre en una menor cantidad. 
+                Para asegurar que solamente contiene estos tres ingredientes, una horchata de elaboración artesanal.</p></td>
+            <td>$30.00</td>
+        </tr>
+        <tr>
+            <td><img src="img/29.jpg" alt="Bebidas"></td>
+            <td><p>Refrescos. Ideal para acompañar la comida, para los amantes del refresco, se ofrecen de varios y dependiendo del gusto o antojo.</p></td>
+            <td>$30.00</td>
+        </tr>
+        <tr>
+            <td><img src="img/30.jpg" alt="Bebidas"></td>
+            <td><p>Bebida energizante. 
+                Las bebidas energizantes o energéticas, también conocidas como hipertónicas, neurotizantes o psicoactivas, son bebidas sin alcohol que contienen sustancias estimulantes, y que ofrecen al consumidor disminuir temporalmente la sensación de fatiga y el agotamiento, además de aumentar la habilidad mental y proporcionar un incremento de la resistencia física.</p></td>
+            <td>$40.00</td>
+        </tr>
+
+    </table>
+</body>
+</html>
